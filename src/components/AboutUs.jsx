@@ -2,7 +2,7 @@ import Frame9 from "../assets/icons&images/Frame 9.png";
 import Frame22 from "../assets/icons&images/Frame 22.png";
 import Frame23 from "../assets/icons&images/Frame 23.png";
 import Group10 from "../assets/icons&images/Group 10.png";
-import Objects from "../assets/icons&images/Objects.png";
+import Objects from "../assets/icons&images/OBJECTS.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
