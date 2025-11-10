@@ -30,7 +30,7 @@ const FormComponent = () => {
       {/* Name */}
       <input
         type="text"
-        className="bg-white text-slate-600 w-120 px-4 text-sm font-content"
+        className="bg-white text-slate-600 w-full px-4 text-sm font-content"
         {...register("name", {
           required: "Name is required",
           minLength: { value: 3, message: "Name must be at least 3 characters" },
@@ -44,7 +44,7 @@ const FormComponent = () => {
       {/* Email */}
       <input
         type="email"
-        className="bg-white text-slate-600 w-120 px-4 text-sm font-content"
+        className="bg-white text-slate-600 xl:w-120 w-full px-4 text-sm font-content"
         {...register("email", {
           required: "Email is required",
           pattern: {
@@ -61,7 +61,7 @@ const FormComponent = () => {
       {/* Phone */}
       <input
         type="tel"
-        className="bg-white text-slate-600 w-120 px-4 text-sm font-content"
+        className="bg-white text-slate-600 xl:w-120 w-full px-4 text-sm font-content"
         {...register("phone", {
           required: "Phone number is required",
           pattern: {
@@ -77,7 +77,7 @@ const FormComponent = () => {
 
       {/* Message */}
       <textarea
-        className="px-3 py-1 bg-white text-slate-600 font-content text-sm w-120"
+        className="px-3 py-1 bg-white text-slate-600 font-content text-sm xl:w-120 w-full resize-none"
         {...register("message", {
           required: "Message is required",
           minLength: { value: 5, message: "Message must be at least 5 characters long" },

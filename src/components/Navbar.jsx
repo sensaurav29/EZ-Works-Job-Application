@@ -72,14 +72,14 @@ export const OpenNav = ({ setisOpen, navigate }) => {
 
   return (
     <div
-      className={`openNav absolute top-5 right-0 flex flex-col sm:flex-row-reverse  text-sm pr-1 `}
+      className={`openNav absolute xl:top-5 top-0 right-0 flex flex-col sm:flex-row-reverse  text-sm pr-1 `}
     >
       <div className="p-2 flex justify-end" onClick={() => setisOpen(false)}>
         <img className="h-10" src={openImg} alt="" />
       </div>
 
       <div className="flex flex-col sm:flex-row sm:gap-2 sm:items-center gap-2 items-end">
-        {["Services", "Their Stories", "Our Stories", "Varnan"].map(
+        {["Services", "About us", "Varnan"].map(
           (item, idx) => (
             <div className="openNav" key={idx}>
               <NavLink

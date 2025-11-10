@@ -16,13 +16,13 @@ const Stairs = (props ) => {
       display: "block",
     });
     tl.from(".stairs", {
-      height: 0,
+      width: 0,
       stagger: {
         amount: -0.3,
       },
     });
     tl.to(".stairs", {
-      y: "100%",
+      x: "100%",
       stagger: {
         amount: -0.3,
       },
@@ -31,7 +31,7 @@ const Stairs = (props ) => {
       display: "none",
     });
     tl.to(".stairs", {
-      y: "0%",
+      x: "0%",
     });
 
     gsap.from(childrenDiv.current,{
@@ -45,13 +45,13 @@ const Stairs = (props ) => {
 
   return (
     <div>
-      <div ref={parentDivRef} className="h-screen w-full  fixed z-20 top-0">
-        <div className="h-full w-full flex">
-          <div className="stairs h-full w-1/5  bg-[#F15D2B]"></div>
-          <div className="stairs h-full w-1/5  bg-[#F15D2B]"></div>
-          <div className="stairs h-full w-1/5  bg-[#F15D2B]"></div>
-          <div className="stairs h-full w-1/5  bg-[#F15D2B]"></div>
-          <div className="stairs h-full w-1/5  bg-[#F15D2B]"></div>
+      <div ref={parentDivRef} className="h-screen w-screen  fixed z-20 top-0">
+        <div className="h-full w-full flex flex-col ">
+          <div className="stairs w-full h-1/5  bg-[#F15D2B]"></div>
+          <div className="stairs w-full h-1/5  bg-[#F15D2B]"></div>
+          <div className="stairs w-full h-1/5  bg-[#F15D2B]"></div>
+          <div className="stairs w-full h-1/5  bg-[#F15D2B]"></div>
+          <div className="stairs w-full h-1/5  bg-[#F15D2B]"></div>
         </div>
       </div>
       <div className="overflow-x-hidden" ref={childrenDiv}>
